@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Responsive Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        /* Default styles for all screens */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav {
+	display: none;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+nav li {
+	margin-right: 10px;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+main {
+	padding: 20px;
+	margin-top: 70px;
+}
+section {
+	margin-bottom: 20px;
+}
+h1, h2 {
+	font-weight: normal;
+	margin: 0;
+}
+footer {
+	background-color: #333;
+	color: #ffffff;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Styles for screens larger than 600px */
+@media only screen and (min-width: 600px) {
+	header {
+		padding: 20px;
+	}
+	nav {
+		display: block;
+	}
+	main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	section {
+		width: calc(50% - 20px);
+		margin-right: 20px;
+	}
+	section:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
+/* Styles for screens larger than 800px */
+@media only screen and (min-width: 800px) {
+	main {
+		padding: 0 50px;
+	}
+}
+	
+    </style>
+</head>
+
+<body>
+	<div class="sidebar  bar-block  w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
+		<button class="w3-bar-item w3-button w3-large"
+		onclick="w3_close()">Close &times;</button>
+		<a href="#" class="w3-bar-item w3-button">Help</a>
+		<a href="#" class="w3-bar-item w3-button">+92 345 6789689</a>
+		<a href="#" class="w3-bar-item w3-button">User123@gmail.com</a>
+	  </div>
+
+	  <div>
+		<button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+	<header>
+		<h1>My Website</h1>
+		<nav>
+			<ul>
+				<li><a href="#"><b><u>Home</u></b></a></li>
+				<li><a href="#"><b><u>About</u></b></a></li>
+				<li><a href="#"><b><u>Contact</u></b></a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Section 1</h2>
+			<p> This is section one of my website. You can type any thing here. This section is used for typing any kind of easy that you want to be write here. And type any thing that you want for your website. We hope you would like our website.</p>
+		</section>
+		<section>
+			<h2>Section 2</h2>
+			<p>This is section tow of my website. You can type any thing here. This section is used for typing any kind of easy that you want to be write here. And type any thing that you want for your website. We hope you would like our website.</p>
+		</section>
+		
+	</main>
+	<center>
+	<section>
+			<h2>Section 3</h2>
+			<p>This is section three of my website. You can type any thing here. This section is used for typing any kind of easy that you want to be write here. And type any thing that you want for your website. We hope you would like our website.</p>
+		</section>
+	</center>
+	
+	<footer>
+		<p>&copy; 2023 My Website</p>
+	</footer>
+	<script>
+		function w3_open() {
+			document.getElementById("mySidebar").style.display = "block";
+		}
+		function w3_close() {
+			document.getElementById("mySidebar").style.display = "none";
+		}
+		</script>
+</body>
+</html>
